@@ -34,14 +34,32 @@ public:
     }
 
 
+    friend Long operator-(const Long &d1, const Long &d2)
+    {
+       if(d1.getFirst() < d2.getFirst() && d1.getSecond() < d2.getSecond()){
+           return Long(d2.getFirst() - d1.getFirst(), d2.getSecond() - d1.getSecond());
+
+       } else if(d1.getFirst() < d2.getFirst() && d1.getSecond() > d2.getSecond()){
+           return Long(d2.getFirst() - d1.getFirst(), d1.getSecond() - d2.getSecond());
+
+       } else if(d1.getFirst() > d2.getFirst() && d1.getSecond() < d2.getSecond()){
+           return Long(d1.getFirst() - d2.getFirst(), d2.getSecond() - d1.getSecond());
+
+       }else if(d1.getFirst() > d2.getFirst() && d1.getSecond() > d2.getSecond()){
+           return Long(d1.getFirst() - d2.getFirst(), d1.getSecond() - d2.getSecond());
+
+       }
+        //return Long(d1.getFirst() - d2.getFirst(), d1.getSecond() - d2.getSecond());
+    }
+
     friend Long operator+(const Long& d1, const Long& d2)
     {
         return Long(d1.getFirst()+d2.getFirst(), d1.getSecond() + d2.getSecond());
     }
-    friend Long operator-(const Long &d1, const Long &d2)
-    {
-        return Long(d1.getFirst() - d2.getFirst(), d1.getSecond() - d2.getSecond());
-    }
+//    friend Long operator-(const Long &d1, const Long &d2)
+//    {
+//        return Long(d1.getFirst() - d2.getFirst(), d1.getSecond() - d2.getSecond());
+//    }
     friend Long operator*(const Long &d1, const Long &d2)
     {
         return Long(d1.getFirst() * d2.getFirst(), d1.getSecond() * d2.getSecond());
@@ -75,27 +93,27 @@ public:
 };
 
 
-
-
-
+//void foo(){
+//
+//}
+//int foo1(){
+//    return 0;
+//}
+//int foo2(int a, int b){
+//    if(a-b!=0){
+//        return 0;
+//    } else{
+//        return 1;
+//    }
+//}
 
 int main(){
-
-    Long me0ow1(1,9);
+    Long me0ow1(9,1);
     Long me0ow2(1,9);
-
     cout<<"me0ow1 = ("<<me0ow1<<")"<<endl;
     cout<<"me0ow2 = ("<<me0ow2<<")"<<endl;
     cout<<"сложение(Long) = ("<<me0ow1+me0ow2<<")"<<endl;
-    if(me0ow2<me0ow1 || me0ow2==me0ow1)
-    {
-        cout<<"вычитание(Long) = ("<<me0ow1-me0ow2<<")"<<endl;
-    }
-    else
-    {
-        cout<< "ошибка при вычитании (получили отрицательное число) "<<endl;
-    }
-    // cout<<"вычитание(Long) = ("<<me0ow1-me0ow2<<")"<<endl;
+    cout<<"вычитание(Long) = ("<<me0ow1-me0ow2<<")"<<endl;
     cout<<"умножение(Long) = ("<<me0ow1*me0ow2<<")"<<endl;
     cout<<"деление(Long) = ("<<me0ow1/me0ow2<<")"<<endl;
     cout<<"остаток от деления(Long) = ("<<me0ow1%me0ow2<<")"<<endl;
@@ -109,5 +127,5 @@ int main(){
     if (me0ow1==me0ow2){
         cout<<"сравнение(Long) = ("<<me0ow1 << "==" << me0ow2 << ")"<< endl;
     }
-
+    return 0;
 }
