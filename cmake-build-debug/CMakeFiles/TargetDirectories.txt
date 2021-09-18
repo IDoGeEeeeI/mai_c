@@ -1,3 +1,3 @@
-/Users/dmitrijpankratov/CLionProjects/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/dmitrijpankratov/CLionProjects/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/dmitrijpankratov/CLionProjects/untitled/cmake-build-debug/CMakeFiles/untitled.dir
+/Users/dmitrijpankratov/CLionProjects/oop_exercise_01 /cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/dmitrijpankratov/CLionProjects/oop_exercise_01 /cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/dmitrijpankratov/CLionProjects/oop_exercise_01 /cmake-build-debug/CMakeFiles/oop_exercise_01_.dir

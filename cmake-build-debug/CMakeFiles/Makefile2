@@ -54,16 +54,16 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dmitrijpankratov/CLionProjects/untitled
+CMAKE_SOURCE_DIR = "/Users/dmitrijpankratov/CLionProjects/oop_exercise_01 "
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dmitrijpankratov/CLionProjects/untitled/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/dmitrijpankratov/CLionProjects/oop_exercise_01 /cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/untitled.dir/all
+all: CMakeFiles/oop_exercise_01_.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/untitled.dir/clean
+clean: CMakeFiles/oop_exercise_01_.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/untitled.dir
+# Target rules for target CMakeFiles/oop_exercise_01_.dir
 
 # All Build rule for target.
-CMakeFiles/untitled.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dmitrijpankratov/CLionProjects/untitled/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target untitled"
-.PHONY : CMakeFiles/untitled.dir/all
+CMakeFiles/oop_exercise_01_.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_01_.dir/build.make CMakeFiles/oop_exercise_01_.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_01_.dir/build.make CMakeFiles/oop_exercise_01_.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/dmitrijpankratov/CLionProjects/oop_exercise_01 /cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target oop_exercise_01_"
+.PHONY : CMakeFiles/oop_exercise_01_.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/untitled.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dmitrijpankratov/CLionProjects/untitled/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/untitled.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dmitrijpankratov/CLionProjects/untitled/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/untitled.dir/rule
+CMakeFiles/oop_exercise_01_.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/dmitrijpankratov/CLionProjects/oop_exercise_01 /cmake-build-debug/CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/oop_exercise_01_.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/dmitrijpankratov/CLionProjects/oop_exercise_01 /cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/oop_exercise_01_.dir/rule
 
 # Convenience name for target.
-untitled: CMakeFiles/untitled.dir/rule
-.PHONY : untitled
+oop_exercise_01_: CMakeFiles/oop_exercise_01_.dir/rule
+.PHONY : oop_exercise_01_
 
 # clean rule for target.
-CMakeFiles/untitled.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/clean
-.PHONY : CMakeFiles/untitled.dir/clean
+CMakeFiles/oop_exercise_01_.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_01_.dir/build.make CMakeFiles/oop_exercise_01_.dir/clean
+.PHONY : CMakeFiles/oop_exercise_01_.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
